@@ -1,0 +1,17 @@
+POST http://localhost:5001/api/generateOtp HTTP/1.1
+content-type : application/json
+
+{
+    "phone":"+918017175093"
+}
+
+###
+
+POST http://localhost:5001/api/verifyOtp HTTP/1.1
+content-type : application/json
+
+{
+    "phone":"+918017175093",
+    "otp":"5148",
+    "hash":"b4fcd2d4a32a5f2364efceed3369ad462821136cdc44d0fafaf3b5838ecf126e.1631691705379"
+}
